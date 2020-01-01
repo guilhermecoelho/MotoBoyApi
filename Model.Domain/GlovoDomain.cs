@@ -1,12 +1,10 @@
-﻿using MongoDB.Bson;
-using MongoDB.Bson.Serialization.Attributes;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Text;
 
 namespace MotoBoy.Domain
 {
-    public class DayResumeDomain : BaseDomain
+    public class GlovoDomain : BaseDomain
     {
 
         public long Delivery { get; set; }
@@ -20,10 +18,5 @@ namespace MotoBoy.Domain
         public float Earnings { get; set; }
 
         public float CashOut { get; set; }
-
-        public int Kilometers { get; set; }
-
-        public float Tax { get; set; }
-
     }
 }

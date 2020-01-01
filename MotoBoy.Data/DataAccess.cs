@@ -7,7 +7,7 @@ using System.Text;
 
 namespace MotoBoy.Data
 {
-    public class DataAccess<T> where T : BaseEntity
+    public class DataAccess<T> where T : BaseDomain
     {
         private readonly MongoDbContext mongoDbContext = new MongoDbContext();
         private IMongoDatabase Database { get; }

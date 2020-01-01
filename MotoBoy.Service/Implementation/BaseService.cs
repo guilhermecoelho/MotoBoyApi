@@ -7,7 +7,7 @@ using System.Text;
 
 namespace MotoBoy.Service.Implementation
 {
-    public class BaseService<T> : IBaseService<T> where T : BaseEntity
+    public class BaseService<T> : IBaseService<T> where T : BaseDomain
     {
         private readonly T _service;
         private readonly IMapper _mapper;

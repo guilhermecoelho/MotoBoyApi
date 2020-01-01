@@ -5,7 +5,7 @@ using System.Text;
 
 namespace MotoBoy.Service.Interface
 {
-    public interface IBaseService<T> where T : BaseEntity
+    public interface IBaseService<T> where T : BaseDomain
     {
         void Insert(T obj);
 

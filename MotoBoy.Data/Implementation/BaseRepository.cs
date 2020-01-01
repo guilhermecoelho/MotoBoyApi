@@ -6,7 +6,7 @@ using MongoDB.Bson;
 
 namespace MotoBoy.Data.Implementation
 {
-    public class BaseRepository<T> : IBaseRepository<T> where T : BaseEntity
+    public class BaseRepository<T> : IBaseRepository<T> where T : BaseDomain
     {
 
         private readonly DataAccess<T> data;
